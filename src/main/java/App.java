@@ -32,7 +32,7 @@ public class App {
         // Replace with your own audio file name and Helper class which implements AudioConfig using PullAudioInputStreamCallback
         PullAudioInputStreamCallback callback;
 
-        try (InputStream stream = App.class.getResourceAsStream("/sample.mp3")) {
+        try (InputStream stream = App.class.getResourceAsStream("/sample.wav")) {
             assert stream != null;
             callback = new FileAudioStreamCallback(stream.readAllBytes());
         }
